@@ -1,0 +1,67 @@
+.main-image::before{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left:0px ;
+    width: 100%;
+    height: calc(100% - 20px);
+    background-color: #5ba4f1;
+    border-radius:10px ;
+    opacity: .7;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+.main-image:hover::before{
+    top: -20px;
+    left:0px ;
+    width: 100%;
+    height: calc(100% + 40px);
+    scale: 1.05;
+}
+
+
+a.card-collapse {
+    position: relative;
+}
+a.card-collapse::after{
+    content: '';
+    position: absolute;
+    background-image: url(../images/arrow.png);
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+a.card-collapse:not(.collapsed)::after{
+    transform:translate(0,-50%) rotate(180deg) ;
+    -webkit-transform:translate(0,-50%) rotate(180deg) ;
+    -moz-transform:translate(0,-50%) rotate(180deg) ;
+    -ms-transform:translate(0,-50%) rotate(180deg) ;
+    -o-transform:translate(0,-50%) rotate(180deg) ;
+}
+
+hr{
+    border-top: 2px solid rgb(140, 139, 139) !important;
+}
+hr.thin{
+    border-top: 1px solid rgb(140, 139, 139) !important;
+}
+
+ul{
+    list-style: none;
+}

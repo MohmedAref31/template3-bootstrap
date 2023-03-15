@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    /> -->
+    
+  </head>
+  <body>
+    <!-- start nav  -->
+    <div class="container-fluid bg-dark fixed-top border-bottom" style="opacity:.8">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"
+          ><img
+            src="images/logo.webp"
+            alt="img"
+            width="50px"
+            class="rounded-circle"
+          /><span class="d-inline-block ml-2 text-uppercase font-weight-bolder"
+            >mobilko</span
+          ></a
+        >
+
+        <!-- Toggler/collapsibe Button -->
+        <button
+          class="navbar-toggler btn-outline-secondary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div
+          class="collapse navbar-collapse d-lg-flex justify-content-between"
+          id="collapsibleNavbar"
+        >
+          <ul class="navbar-nav text-capitalize nav nav-pills flex-grow-1">
+            <li class="nav-item">
+              <a class="nav-link active py-lg-1 px-3" href="#" data-toggle="tab"
+                >home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-lg-1 px-3" href="#" data-toggle="tab"
+                >link</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle py-lg-1 px-3"
+                data-toggle="dropdown"
+                href="#"
+                >categories</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">mobiles</a>
+                <a class="dropdown-item" href="#">tablets</a>
+                <a class="dropdown-item" href="#">laptops</a>
+                <a class="dropdown-item" href="#">desktops</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link py-lg-1 px-3" href="#" data-toggle="tab"
+                >about</a
+              >
+            </li>
+          </ul>
+
+          <div class="right-side-holde d-lg-flex justify-content-between">
+            <form class="form-inline mr-sm-3">
+              <input
+                class="form-control mr-sm-2"
+                type="text"
+                placeholder="Search"
+              />
+              <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+
+            <button
+              type="button"
+              class="btn btn-primary w-lg-100 mt-2 mt-lg-0 d-block"
+              data-toggle="modal"
+              data-target="#myModal"
+              data-backdrop="static"
+              data-keyboard="false"
+            >
+              login
+            </button>
+
+          
+          </div>
+        </div>
+      </nav>
+    </div>
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">login or signup</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="email">Email address:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter email"
+                    id="email"
+                  />
+                  <div class="form-text text-secondary">
+                    we will tell enyone your mail
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Enter password"
+                    id="pwd"
+                  />
+                </div>
+
+                <div class="custom-control custom-switch">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="customSwitch1"
+                    checked
+                  />
+                  <label class="custom-control-label" for="customSwitch1"
+                    >remember me</label
+                  >
+                </div>
+                <button type="submit" class="btn btn-primary w-100 mt-2">
+                  login
+                </button>
+              </form>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary d-block w-100"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- start main  -->
+    <main class="container-fluid bg-dark  pb-5" style="padding-top: 120px;">
+      <div
+        class="container d-flex flex-wrap align-items-center justify-content-around"
+      >
+        <div
+          class="text-light mt-4 mt-md-0 col-12 col-md-6 col-lg-4 order-2 order-md-1 text-center text-md-left flex-grow-1"
+        >
+          <h1 class="text-capitalize display-4 font-weight-bolder">welcome</h1>
+          <p class="text-capitalize lead">
+            here you can find all smart things you need.
+          </p>
+          <a href="#" class="btn btn-primary">explore now</a>
+        </div>
+        <div class="main-image col-12 col-md-6 col-lg-4 order-1 flex-grow-1">
+          <img
+            src="images/iphone14-croped.png"
+            class="w-100 d-block m-auto position-relative"
+          />
+        </div>
+      </div>
+    </main>
+
+    <!-- start collapse  -->
+    <div
+      class="container-fluid mr-0 ml-0 p-0 pt-5 pb-5 bg-dark bordered border-top"
+    >
+      <div id="accordion" class=" ">
+        <h2 class="text-center text-capitalize text-light">
+          mobiles information
+        </h2>
+        <div class="card">
+          <div class="card-header">
+            <a
+              class="card-link text-capitalize w-100 d-inline-block card-collapse"
+              data-toggle="collapse"
+              href="#collapseOne"
+            >
+              iphone11 information
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-parent="#accordion">
+            <div class="card-body">
+              Liquid Retina HD display 6.1‑inch (diagonal) all-screen LCD
+              Multi-Touch display with IPS technology 1792‑by‑828‑pixel
+              resolution at 326 ppi 1400:1 contrast ratio (typical) True Tone
+              display Wide color display (P3) Haptic Touch 625 nits max
+              brightness (typical) Fingerprint‑resistant oleophobic coating
+              Support for display of multiple languages and characters
+              simultaneously
+            </div>
+          </div>
+        </div>
+        <div class="card text-capitalize">
+          <div class="card-header">
+            <a
+              class="card-link text-capitalize w-100 d-inline-block card-collapse collapsed"
+              data-toggle="collapse"
+              href="#collapseTwo"
+            >
+              iphone14
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Liquid Retina HD display 6.1‑inch (diagonal) all-screen LCD
+              Multi-Touch display with IPS technology 1792‑by‑828‑pixel
+              resolution at 326 ppi 1400:1 contrast ratio (typical) True Tone
+              display Wide color display (P3) Haptic Touch 625 nits max
+              brightness (typical) Fingerprint‑resistant oleophobic coating
+              Support for display of multiple languages and characters
+              simultaneously
+            </div>
+          </div>
+        </div>
+        <div class="card text-capitalize">
+          <div class="card-header">
+            <a
+              class="card-link text-capitalize w-100 d-inline-block card-collapse collapsed"
+              data-toggle="collapse"
+              href="#collapseThree"
+            >
+              samsung galaxy s23 ultra
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Liquid Retina HD display 6.1‑inch (diagonal) all-screen LCD
+              Multi-Touch display with IPS technology 1792‑by‑828‑pixel
+              resolution at 326 ppi 1400:1 contrast ratio (typical) True Tone
+              display Wide color display (P3) Haptic Touch 625 nits max
+              brightness (typical) Fingerprint‑resistant oleophobic coating
+              Support for display of multiple languages and characters
+              simultaneously
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- start section  -->
+    <section
+      class="d-flex flex-wrap align-items-star p-2 pt-5 pb-5 bg-dark bordered border-top"
+    >
+      <!-- start slider -->
+      <div
+        class="main-slider pt-5 bg-secondary d-flex align-items-center col-12 col-lg-6"
+      >
+        <div
+          id="slider"
+          class="carousel slide bg-secondary col-12 border-primary border border-top-0 border-bottom-0"
+          data-ride="carousel"
+        >
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#slider" data-slide-to="0" class="active"></li>
+            <li data-target="#slider" data-slide-to="1"></li>
+            <li data-target="#slider" data-slide-to="2"></li>
+            <li data-target="#slider" data-slide-to="3"></li>
+          </ul>
+
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="images/iphone11.png"
+                alt="iphone11"
+                width="300px"
+                height="300px"
+                class="m-auto d-block"
+              />
+              <div
+                class="slider-content rounded pt-5 pb-2 pr-2 pl-2 w-75 text-center bg-dark mb-5 mr-auto ml-auto"
+              >
+                <h1 class="font-size-16 text-light text-uppercase">
+                  iphone 11
+                </h1>
+                <a
+                  href="#"
+                  class="btn btn-primary text-capitalize font-weight-bolder"
+                  >shop now</a
+                >
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/reno8.png"
+                alt="iphone11"
+                width="300px"
+                height="300px"
+                class="m-auto d-block"
+              />
+              <div
+                class="slider-content rounded pt-5 pb-2 pr-2 pl-2 w-75 text-center bg-dark mb-5 mr-auto ml-auto"
+              >
+                <h1 class="font-size-16 text-light text-uppercase">reno 8</h1>
+                <a
+                  href="#"
+                  class="btn btn-primary text-capitalize font-weight-bolder"
+                  >shop now</a
+                >
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="images/iphone14.png"
+                alt="iphone11"
+                width="300px"
+                height="300px"
+                class="m-auto d-block"
+              />
+              <div
+                class="slider-content rounded pt-5 pb-2 pr-2 pl-2 w-75 text-center bg-dark mb-5 mr-auto ml-auto"
+              >
+                <h1 class="font-size-16 text-light text-uppercase">
+                  iphone 14
+                </h1>
+                <a
+                  href="#"
+                  class="btn btn-primary text-capitalize font-weight-bolder"
+                  >shop now</a
+                >
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/s23ultra.png"
+                alt="iphone11"
+                width="300px"
+                height="300px"
+                class="m-auto d-block"
+              />
+              <div
+                class="slider-content rounded pt-5 pb-2 pr-2 pl-2 w-75 text-center bg-dark mb-5 mr-auto ml-auto"
+              >
+                <h1 class="font-size-16 text-light text-uppercase">
+                  s23 ultra
+                </h1>
+                <a
+                  href="#"
+                  class="btn btn-primary text-capitalize font-weight-bolder"
+                  >shop now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#slider" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#slider" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="row mr-0 ml-0 right-sec justify-content-center flex-grow-1 col-lg-6 mt-5 mt-lg-0"
+      >
+        <div class="card bg-secondary text-light col-9 col-sm-5 m-2">
+          <img src="images/iphone11.jpg" alt="" class="card-img-top" />
+          <div class="card-body">
+            <h3 class="card-title text-capitalize">iphone11</h3>
+            <p class="card-text">this is one of our variaties</p>
+            <a href="#" class="btn btn-primary">explore now</a>
+          </div>
+        </div>
+
+        <div class="card bg-secondary text-light col-9 col-sm-5 m-2">
+          <img src="images/iphone11.jpg" alt="" class="card-img-top" />
+          <div class="card-body">
+            <h3 class="card-title text-capitalize">iphone11</h3>
+            <p class="card-text">this is one of our variaties</p>
+            <a href="#" class="btn btn-primary">explore now</a>
+          </div>
+        </div>
+
+        <div class="card bg-secondary text-light col-9 col-sm-5 m-2">
+          <img src="images/iphone11.jpg" alt="" class="card-img-top" />
+          <div class="card-body">
+            <h3 class="card-title text-capitalize">iphone11</h3>
+            <p class="card-text">this is one of our variaties</p>
+            <a href="#" class="btn btn-primary">explore now</a>
+          </div>
+        </div>
+
+        <div class="card bg-secondary text-light col-9 col-sm-5 m-2">
+          <img src="images/iphone11.jpg" alt="" class="card-img-top" />
+          <div class="card-body">
+            <h3 class="card-title text-capitalize">iphone11</h3>
+            <p class="card-text">this is one of our variaties</p>
+            <a href="#" class="btn btn-primary">explore now</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- start second section  -->
+
+    <section class="container-fluid bg-secondary pt-5 pb-5">
+
+      <div class="apple mt-5 mb-2">
+        <h2 class="text-light text-center text-uppercase">oppo</h2>
+        <div class="p-3 bg-dark rounded">
+          <p class="text-light" style="font-size: 20px">
+            <a href="http://apple.com" target="_blank" class="text-primary"
+              >Here</a
+            >
+            some infos about the company
+          </p>
+          <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="copy to clipboard">
+           copy
+          </button>
+          
+         <pre>
+           <code class="text-success  d-block" style="overflow-x: auto; font-size: 20px; ">Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch</code>
+          </pre>
+         </div>
+      </div>
+
+
+      <div class="apple mt-5 mb-2">
+        <h2 class="text-light text-center text-uppercase">samsung</h2>
+        <div class="p-3 bg-dark rounded">
+          <p class="text-light" style="font-size: 20px">
+            <a href="http://apple.com" target="_blank" class="text-primary"
+              >Here</a
+            >
+            some infos about the company
+          </p>
+          <button type="button" class="btn btn-secondary" data-toggle="popover" data-toggle="tooltip" data-placement="top" title="copy to clipboard " >
+           copy
+          </button> 
+         <pre>
+           <code class="text-success  d-block" style="overflow-x: auto; font-size: 20px; ">Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch</code>
+          </pre>
+         </div>
+      </div>
+      <div class="apple mt-5 mb-2">
+        <h2 class="text-light text-center text-uppercase">Apple</h2>
+        <div class="p-3 bg-dark rounded">
+          <p class="text-light" style="font-size: 20px">
+            <a href="http://apple.com" target="_blank" class="text-primary"
+              >Here</a
+            >
+            some infos about the company
+          </p>
+          <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="copy to clipboard">
+            copy
+           </button> 
+         <pre>
+           <code class="text-success  d-block" style="overflow-x: auto; font-size: 20px; ">Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch</code>
+          </pre>
+         </div>
+      </div>
+
+    </section>
+
+    <section class="container-fluid bg-dark pt-5 pb-5"> 
+      <h3 class="text-center text-light text-capitalize display-4 font-weight-bolder"> compaines</h3>
+      <div class="container-fluid row justify-content-center m-auto mt-5">
+       
+        <div class="card col-11 col-md-5 col-lg-3 col-xl-2 m-3">
+          <div class="card-img-top">
+            <img src="images/samsung-logo.png" alt="samsung-logo" class="w-100 " style="height:200px">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title"> Samsung</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, reiciendis?</p>
+            <a href="https://www.samsung.com" class="btn btn-primary">visite the site</a>
+          </div>
+        </div>
+
+        <div class="card col-11 col-md-5 col-lg-3 col-xl-2 m-3">
+          <div class="card-img-top">
+            <img src="images/apple-logo.png" alt="samsung-logo" class="w-100 " style="height:200px">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title"> Apple</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, reiciendis?</p>
+            <a href="https://www.apple.com" class="btn btn-primary">visite the site</a>
+          </div>
+        </div>
+
+        <div class="card col-11 col-md-5 col-lg-3 col-xl-2 m-3">
+          <div class="card-img-top">
+            <img src="images/oppo-logo.png" alt="samsung-logo" class="w-100 " style="height:200px">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title"> OPPO</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, reiciendis?</p>
+            <a href="https://www.oppo.com" class="btn btn-primary">visite the site</a>
+          </div>
+        </div>
+        <div class="card col-11 col-md-5 col-lg-3 col-xl-2 m-3">
+          <div class="card-img-top">
+            <img src="images/huawei.png" alt="samsung-logo" class="w-100 " style="height:200px">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title"> samsung</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, reiciendis?</p>
+            <a href="https://www.samsung.com" class="btn btn-primary">visite the site</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="contact container-fluid bg-secondary pt-5 pb-5" >
+      <div class="container row justify-content-center m-auto">
+
+        <div class="card col-11 col-sm-5 col-lg-3 col-xl-2 bg-dark text-light p-0 m-2">
+          <div class="card-body">
+            <h3 class="text-center text-capitalize card-title " >contact us</h3>
+              <div class="card-icon">
+                <img src="images/facebook.webp" alt="facebook_icon" width="30px" class="m-auto d-block">
+              </div>
+              <a href="https://www.facebook.com" class="card-link text-capitalize text-center d-block pt-3">
+                go to link
+              </a>
+          </div>
+        </div>
+
+        <div class="card col-11 col-sm-5 col-lg-3 col-xl-2 bg-dark text-light p-0 m-2">
+          <div class="card-body">
+            <h3 class="text-center text-capitalize card-title " >contact us</h3>
+              <div class="card-icon">
+                <img src="images/facebook.webp" alt="facebook_icon" width="30px" class="m-auto d-block">
+              </div>
+              <a href="https://www.facebook.com" class="card-link text-capitalize text-center d-block pt-3">
+                go to link
+              </a>
+          </div>
+        </div>
+
+        <div class="card col-11 col-sm-5 col-lg-3 col-xl-2 bg-dark text-light p-0 m-2">
+          <div class="card-body">
+            <h3 class="text-center text-capitalize card-title " >contact us</h3>
+              <div class="card-icon">
+                <img src="images/facebook.webp" alt="facebook_icon" width="30px" class="m-auto d-block">
+              </div>
+              <a href="https://www.facebook.com" class="card-link text-capitalize text-center d-block pt-3">
+                go to link
+              </a>
+          </div>
+        </div>
+
+        <div class="card col-11 col-sm-5 col-lg-3 col-xl-2 bg-dark text-light p-0 m-2">
+          <div class="card-body">
+            <h3 class="text-center text-capitalize card-title " >contact us</h3>
+              <div class="card-icon">
+                <img src="images/facebook.webp" alt="facebook_icon" width="30px" class="m-auto d-block">
+              </div>
+              <a href="https://www.facebook.com" class="card-link text-capitalize text-center d-block pt-3">
+                go to link
+              </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="pt-3 pb-5 container-fluid bg-dark">
+
+      <div class="container-fluid row m-auto justify-content-center text-light ">
+
+        <div class="colm text-center col-11 col-md-5 col-lg-3">
+          <hr>
+          <div class="contact-top d-flex justify-content-center align-items-center">
+            <img src="images/facebook.webp" alt="facebook_icon" width="40" class="mr-2">
+            <h4>communicate</h3>
+          </div>
+          <hr>
+          <ul class="text-center pl-0">
+            <li class="mt-2">Tel:999-000-909</li>
+            <li class="mt-2 ">Address : Beni-suef,Egypt</li>
+            <li class="mt-2 ">Fax : 000-00-000</li>
+          </ul>
+        </div>
+        <div class="colm text-center col-11 col-md-5 col-lg-3">
+          <hr>
+          <div class="contact-top d-flex justify-content-center align-items-center">
+            <img src="images/facebook.webp" alt="facebook_icon" width="40" class="mr-2">
+            <h4>important links</h3>
+          </div>
+          <hr>
+          <ul class="text-center pl-0">
+            <li class="mt-2"><a href="http://www.facebook.com" target="_blank" >visit us</a></li>
+            <li class="mt-2 "><a href="http://www.facebook.com" target="_blank" >take a look</a></li>
+            <li class="mt-2 "><a href="http://www.facebook.com" target="_blank" >see our works</a></li>
+          </ul>
+        </div>
+        <div class="colm text-center col-11 col-md-5 col-lg-3">
+          <hr>
+          <div class="contact-top d-flex justify-content-center align-items-center">
+            <img src="images/facebook.webp" alt="facebook_icon" width="40" class="mr-2">
+            <h4>vision</h3>
+          </div>
+          <hr>
+          <ul class="text-center pl-0">
+            <li class="mt-2">seveices for all</li>
+            <li class="mt-2 ">provide best seveices</li>
+            <li class="mt-2 ">you will be better than before</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="copy-right container-fluid">
+        <hr class="thin">
+        <p class="text-center text-secondary"> Copyright © 2023 Mohamed Aref Ali, Good Company. All rights</p>
+        <hr class="thin">
+      </div>
+    </footer>
+
+     
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script>
+
+
+      $('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
+      $('[data-toggle="popover"]').popover({'placement': 'top'});
+            </script>
+  </body>
+</html>
